@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a44a20">
+  <meta name="description" content="Arbeitsplan – Dienstplanung, Urlaub, Krankmeldungen und Arbeitszeiten für Teams.">
+  <title>Arbeitsplan herunterladen</title>
+  <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#start" aria-label="Arbeitsplan Startseite">
+      <img src="assets/icon.png" alt="" width="48" height="48">
+      <span>Arbeitsplan</span>
+    </a>
+    <nav aria-label="Hauptnavigation">
+      <a href="#funktionen">Funktionen</a>
+      <a href="#installation">Installation</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+    </nav>
+  </header>
+
+  <main id="start">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Native Android-App</p>
+        <h1>Dienstplanung, die das ganze Team versteht.</h1>
+        <p class="lead">Arbeitsplan verbindet Schichtplanung, Teams, Urlaub, Krankmeldungen, Stundenkontrolle und Benachrichtigungen in einer App.</p>
+        <div class="actions">
+          <a class="button primary" href="https://expo.dev/accounts/fpsnox/projects/arbeitsplan/builds/cb6d2021-4efd-4f20-9d38-c0b11c9010d2" download>Arbeitsplan für Android herunterladen</a>
+          <a class="button secondary" href="#installation">Installationshilfe</a>
+        </div>
+        <p class="version">Version 1.2.0 · Android 8 oder neuer</p>
+      </div>
+      <div class="phone-card" aria-label="Arbeitsplan App-Vorschau">
+        <img src="assets/splash-icon.png" alt="Arbeitsplan App-Symbol">
+        <strong>Arbeitsplan</strong>
+        <span>Eigene Teams. Eigene Pläne. Gemeinsam aktuell.</span>
+      </div>
+    </section>
+
+    <section id="funktionen" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Alles an einem Ort</p>
+        <h2>Für Chef, Planer und Mitarbeiter</h2>
+      </div>
+      <div class="feature-grid">
+        <article><h3>Mehrere Teams</h3><p>Jedes Team besitzt einen eigenen Arbeitsplan und eigene Besetzungszeiten.</p></article>
+        <article><h3>Schichtplanung</h3><p>Schichten planen, veröffentlichen und mit Ruhezeit- sowie Pausenhinweisen prüfen.</p></article>
+        <article><h3>Urlaub & Krankheit</h3><p>Anfragen und Krankmeldungen direkt in der App erfassen und im Plan berücksichtigen.</p></article>
+        <article><h3>Benachrichtigungen</h3><p>Mitarbeiter über neue oder geänderte Arbeitspläne informieren.</p></article>
+        <article><h3>Monatsstunden</h3><p>Geplante und gemeldete Zeiten übersichtlich nachvollziehen.</p></article>
+        <article><h3>Cloud-Synchronisierung</h3><p>Alle Geräte arbeiten mit demselben zentralen Supabase-Backend.</p></article>
+      </div>
+    </section>
+
+    <section id="installation" class="section installation">
+      <div class="section-heading">
+        <p class="eyebrow">Direkt von dieser Webseite</p>
+        <h2>Installation auf Android</h2>
+      </div>
+      <ol>
+        <li>Auf <strong>Arbeitsplan für Android herunterladen</strong> tippen.</li>
+        <li>Den Download im Browser bestätigen.</li>
+        <li>Die heruntergeladene Datei <strong>arbeitsplan.apk</strong> öffnen.</li>
+        <li>Falls Android fragt, die Installation aus dieser Quelle für den verwendeten Browser erlauben.</li>
+        <li>Arbeitsplan installieren und mit dem vorhandenen Konto anmelden.</li>
+      </ol>
+      <div class="notice">
+        <strong>Android-Sicherheitshinweis</strong>
+        <p>Da die APK nicht aus einem App-Store stammt, zeigt Android eine Sicherheitsabfrage an. Diese Systemabfrage kann weder die Webseite noch die App deaktivieren.</p>
+      </div>
+    </section>
+
+    <section class="section support">
+      <div>
+        <p class="eyebrow">Updates</p>
+        <h2>Neue Versionen über dieselbe Adresse</h2>
+        <p>In der App kann unter Einstellungen nach einer neuen Version gesucht werden. Der Download öffnet anschließend diese Webseite.</p>
+      </div>
+      <a class="button secondary" href="updates/latest.json">Update-Datei anzeigen</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Arbeitsplan</span>
+    <div><a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a></div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
